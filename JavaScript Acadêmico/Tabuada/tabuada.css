@@ -1,0 +1,45 @@
+body {
+    background-color: hwb(240 48% 7%);
+}
+h1 {
+    font: normal 35px arial;
+    text-align: center;
+    color: antiquewhite;
+}
+body div {
+position: relative;
+background-color: white;
+height: 250px;
+width: 500px;
+display: block;
+margin: auto auto auto auto;
+border-radius: 5%;
+box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+h {
+position: relative;
+font: normal 15px arial;
+text-align: left;
+margin: auto auto auto auto;
+display: block;
+padding-top: 20px;
+padding-left: 20px;
+}
+footer {
+font: normal 15px arial;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+}
+
+.rolagem {
+    width: 200px; /* largura da área */
+    height: 150px; /* altura da área */
+    overflow: auto; /* permitir rolagem quando o conteúdo exceder o tamanho da área */
+    border: 1px solid #ccc; /* borda para fins de visualização */
+    padding: 5px; /* espaçamento interno para evitar que o conteúdo fique muito próximo da borda */
+    position: relative;
+    left: -130px;
+    bottom: -30px;
+    font: normal 15px arial;
+}

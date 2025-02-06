@@ -1,0 +1,41 @@
+h1 {
+    position: relative;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+section {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    
+    float: left;
+}
+section2 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    
+    float: left;
+}
+section3 {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+sectionDaLe {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-left: 5px solid #606060;
+    border-bottom: 5px solid #606060;
+    float: left;
+}
+sectionDoPe {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-left: 5px solid #606060;
+    float: left;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de horas</title>
+    <style>
+        
+        body {
+            background-color: hwb(240 48% 7%);
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font: normal 35px arial;
+            text-align: center;
+            color: antiquewhite;
+        }
+
+
+        h {
+            position: relative;
+            font: normal 15px arial;
+            text-align: left;
+            margin: auto auto auto auto;
+            display: block;
+            padding-top: 40px;
+            padding-left: 20px;
+        }
+
+        footer {
+            font: normal 15px arial;
+            text-align: center;
+            color: antiquewhite;
+            padding-top: 20px;
+        }
+
+        input#Butao {
+            position: relative;
+            right: -10px;
+            bottom: 0px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: block;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        h#TXTEX {
+            text-align: center;
+        }
+        #AnoTXT {
+            margin-left: 20px;
+        }
+        #SexoContainer {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: start;
+            justify-content: start;
+            height: 30px;
+            margin-left: 20px;
+        }
+        #Painel {
+            height: 200px;
+            background-color: rgba(255, 251, 245, 0.818);
+            width: 400px;
+            border-radius: 20px;
+        }
+        #SexF {
+            transform: scale(1.5);
+        }
+        #SexM {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1><strong>Verificador De Idade</strong></h1>
+
+    <div id="Painel">
+        <h id="horas">Ano De Nascimento:</h>
+        <input id="AnoTXT" type="text"> 
+        </br></br>
+        <div id="SexoContainer">
+            Sexo:
+            <input id="SexM" type="radio" name="sexo"> Masculino
+            <input id="SexF" type="radio" name="sexo"> Feminino
+            <input id="Butao" type="button" value="Verificar" onclick="Calcular()">
+        </div>
+            <img id="img" src="https://clipground.com/images/1x1-pixel-png-1.png">
+            <h id="TXTEX"></h>
+    </div>
+
+    <footer> Feito Por <a href="https://github.com/PedroEustaq">Pedro Eustáquio</a></footer>
+    <script src="VerificadorDeIdadeJS.js"></script>
+</body>
+
+</html>

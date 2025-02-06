@@ -1,0 +1,224 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+background-color: #dddddd;
+    color: rgba(0,0,0,1);
+font-family: Arial;
+
+}
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabelaspec td.ce {
+color: white;
+    background-color: #606060;
+    vertical-align: top;
+}
+table#tabelaspec td.cd {
+background-color: #cecece;
+    font-weight: bold;
+}
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 17px;
+    font-weight: bolder;
+}
+div#interface {
+    width: 800px;
+    background-color: white;
+    margin: -20px auto 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px 10px 500px 10px;
+    height: 1250px;
+}
+p {
+    text-align: justify;text-indent: 50px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+a {
+    color: #606060;
+    text-decoration: none   ;
+}
+a:hover {
+    text-decoration-line: underline;
+}
+h2{
+    text-align: center;
+}
+h {
+    font-size: 90px;
+    color: pink;
+}
+/* formatação basica */
+figure.fotocomlegenda{
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 2px 3px 3px black;
+}
+figure.fotocomlegenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.fotocomlegenda figcaption {
+    opacity:0;
+    position:absolute;
+    top:0px;
+    background: rgba(0,0,0,0.5);
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.fotocomlegenda:hover figcaption{
+    opacity: 1  ;
+}
+/* */
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+position: absolute;
+    top: -20px;
+    left: 450px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+img#iconeoculos {
+    position: absolute;
+    left: 1050px;
+    top: 70px;
+}
+/* cabelalho */
+header#cabecalho {
+    border-bottom: 1px #606060 dotted;
+    height:  150px;
+}
+img#glass-logo {
+    position: absolute;
+    top: 95px;
+}
+
+header#cabecalho h2 {
+    font-family: FonteLogo;
+    font-size: 30px;
+    color:#606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+padding: 0px;
+margin-bottom: 0px;
+}
+header#cabecalho h1 {
+    font-family:  Arial;
+    font-size: 15px;
+    color: #888888;
+padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+/* estilos corpos */
+section#corpo {
+    display: block;
+    width: 440px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+article#noticiaprincipal h2 {
+    font-size: 20px;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+    font-family:  "Arial Black";
+}
+aside {
+    display: block;
+    width: 300px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:  2px 2px 2px rgba(0,0,0,0.5);
+
+}
+aside h1 {
+    font-family: FonteLogo;
+    font-size: 20px;
+    color: #606060;
+}
+aside h2 {
+    background-color: #606060;
+    font-size: 15pt;
+    color: #ffffff;
+    padding: 5px 0px 5px 5px;
+    text-align: left;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8px;
+    margin-top: 14px;
+}
+header#cabecalhodoartigo h1{
+    font-family: FonteLogo;
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 0px;
+}
+header#cabecalhodoartigo h2{
+    background-color: #ffffff;
+    font-size: 11px;
+    color: #cecece;
+    margin-top: -25px;
+}
+header#cabecalhodoartigo h3 {
+    background-color: #ffffff;
+    font-size: 13px;
+    color: black;
+    font-size: 10px;
+    text-align: right;
+}

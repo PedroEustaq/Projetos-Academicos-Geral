@@ -1,0 +1,35 @@
+body {
+    background-color: hwb(240 48% 7%);
+}
+h1 {
+    font: normal 35px arial;
+    text-align: center;
+    color: antiquewhite;
+}
+body div {
+position: relative;
+background-color: white;
+width: 500px;
+display: block;
+margin: auto auto auto auto;
+border-radius: 5%;
+box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+h {
+position: relative;
+font: normal 15px arial;
+text-align: left;
+margin: auto auto auto auto;
+display: block;
+padding-top: 10px;
+padding-left: 20px;
+}
+footer {
+font: normal 15px arial;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+}
+input {
+    margin-top: 20px;
+}

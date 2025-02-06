@@ -1,0 +1,43 @@
+body {
+    background-color: hwb(240 48% 7%);
+}
+h1 {
+    font: normal 35px arial;
+    text-align: center;
+    color: antiquewhite;
+}
+body div {
+position: relative;
+background-color: white;
+width: 500px;
+display: block;
+margin: auto auto auto auto;
+border-radius: 5%;
+box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+h {
+position: relative;
+font: normal 15px arial;
+text-align: center;
+margin: auto auto auto auto;
+display: block;
+padding-top: 10px;
+}
+footer {
+font: normal 15px arial;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+}
+div#areaN {
+    width: 220px;
+    height: 170px;
+    overflow: auto;
+    right: 100px;
+    bottom: -5px;
+}
+input#Verificar {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+}
