@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+        <link rel="stylesheet" href="anim.css">
+</head>
+<body id="bodi">
+<main id="mainzao">
+    <div>
+        <img src="img/medicine.svg" alt="" id="medicIMG">
+        <img src="img/doctor.svg" alt="" id="medicIMG2">
+    </div>
+    <div id="formP">
+    <h1>Formulário de Avaliação: Tratamento de Pacientes</h1>
+        <fieldset>
+            <legend>Você se sente ouvido e compreendido pelo médico durante o atendimento?</legend>
+            <input type="radio" id="sim1" name="pergunta1" value="sim">
+            <label for="sim1">Sim</label><br>
+            <input type="radio" id="nao1" name="pergunta1" value="nao">
+            <label for="nao1">Não</label><br>
+            <input type="radio" id="as_vezes1" name="pergunta1" value="as_vezes">
+            <label for="as_vezes1">Às vezes</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>O médico explicou claramente as opções de tratamento e seus possíveis efeitos colaterais?</legend>
+            <input type="radio" id="detalhado2" name="pergunta2" value="detalhado">
+            <label for="detalhado2">Sim, explicou tudo detalhadamente</label><br>
+            <input type="radio" id="superficial2" name="pergunta2" value="superficial">
+            <label for="superficial2">Explicou, mas de forma superficial</label><br>
+            <input type="radio" id="nao_explicou2" name="pergunta2" value="nao_explicou">
+            <label for="nao_explicou2">Não explicou</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Você sente que o médico leva em consideração suas preocupações e opiniões sobre o tratamento?</legend>
+            <input type="radio" id="sempre3" name="pergunta3" value="sempre">
+            <label for="sempre3">Sim, sempre</label><br>
+            <input type="radio" id="as_vezes3" name="pergunta3" value="as_vezes">
+            <label for="as_vezes3">Às vezes</label><br>
+            <input type="radio" id="raramente3" name="pergunta3" value="raramente">
+            <label for="raramente3">Raramente</label><br>
+            <input type="radio" id="nunca3" name="pergunta3" value="nunca">
+            <label for="nunca3">Nunca</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Como você avalia a empatia do médico durante o atendimento?</legend>
+            <input type="radio" id="muito_empatico4" name="pergunta4" value="muito_empatico">
+            <label for="muito_empatico4">Muito empático</label><br>
+            <input type="radio" id="moderado4" name="pergunta4" value="moderado">
+            <label for="moderado4">Moderadamente empático</label><br>
+            <input type="radio" id="pouco_empatico4" name="pergunta4" value="pouco_empatico">
+            <label for="pouco_empatico4">Pouco empático</label><br>
+            <input type="radio" id="sem_empatia4" name="pergunta4" value="sem_empatia">
+            <label for="sem_empatia4">Sem empatia</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Você foi tratado com respeito e dignidade durante todo o processo de tratamento?</legend>
+            <input type="radio" id="sim5" name="pergunta5" value="sim">
+            <label for="sim5">Sim</label><br>
+            <input type="radio" id="nao5" name="pergunta5" value="nao">
+            <label for="nao5">Não</label><br>
+            <input type="radio" id="alguns_momentos5" name="pergunta5" value="alguns_momentos">
+            <label for="alguns_momentos5">Em alguns momentos</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>O tempo de espera para o atendimento e o início do tratamento foi adequado?</legend>
+            <input type="radio" id="rapido6" name="pergunta6" value="rapido">
+            <label for="rapido6">Sim, foi rápido</label><br>
+            <input type="radio" id="razoavel6" name="pergunta6" value="razoavel">
+            <label for="razoavel6">Razoável</label><br>
+            <input type="radio" id="demorado6" name="pergunta6" value="demorado">
+            <label for="demorado6">Demorou muito</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Você recebeu orientações claras sobre os cuidados após o tratamento?</legend>
+            <input type="radio" id="claras7" name="pergunta7" value="claras">
+            <label for="claras7">Sim, foram bem claras</label><br>
+            <input type="radio" id="parcialmente_claras7" name="pergunta7" value="parcialmente_claras">
+            <label for="parcialmente_claras7">Foram parcialmente claras</label><br>
+            <input type="radio" id="nao_orientado7" name="pergunta7" value="nao_orientado">
+            <label for="nao_orientado7">Não recebi orientações</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>O médico discutiu alternativas de tratamento e deixou a decisão final nas suas mãos?</legend>
+            <input type="radio" id="juntos8" name="pergunta8" value="juntos">
+            <label for="juntos8">Sim, discutimos juntos</label><br>
+            <input type="radio" id="algumas_alternativas8" name="pergunta8" value="algumas_alternativas">
+            <label for="algumas_alternativas8">Mencionou algumas alternativas</label><br>
+            <input type="radio" id="apenas_indicou8" name="pergunta8" value="apenas_indicou">
+            <label for="apenas_indicou8">Não, apenas indicou uma opção</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Você se sentiu confortável para fazer perguntas ou expressar suas dúvidas?</legend>
+            <input type="radio" id="confortavel9" name="pergunta9" value="confortavel">
+            <label for="confortavel9">Sim, totalmente confortável</label><br>
+            <input type="radio" id="as_vezes9" name="pergunta9" value="as_vezes">
+            <label for="as_vezes9">Às vezes</label><br>
+            <input type="radio" id="inibido9" name="pergunta9" value="inibido">
+            <label for="inibido9">Não, me senti inibido(a)</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Em uma escala de 1 a 5, como você avaliaria o tratamento geral que recebeu?</legend>
+            <input type="radio" id="1" name="pergunta10" value="1">
+            <label for="1">1: Muito insatisfeito(a)</label><br>
+            <input type="radio" id="2" name="pergunta10" value="2">
+            <label for="2">2: Insatisfeito(a)</label><br>
+            <input type="radio" id="3" name="pergunta10" value="3">
+            <label for="3">3: Neutro</label><br>
+            <input type="radio" id="4" name="pergunta10" value="4">
+            <label for="4">4: Satisfeito(a)</label><br>
+            <input type="radio" id="5" name="pergunta10" value="5">
+            <label for="5">5: Muito satisfeito(a)</label>
+        </fieldset><br>
+
+        <input type="button" value="Enviar" onclick="rodarFinal()" id="button">
+</div>
+<div id="resultado">
+    <h2>A Soma de seus resultados são:</h2>
+    <div>
+        <h3 id="oitenta">82</h3>
+    </div>
+    <p id="pezinh">Parece que ainda temos muito oque melhorar!</p>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
