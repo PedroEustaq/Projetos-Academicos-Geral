@@ -1,0 +1,83 @@
+table {
+    width: 100%;
+    
+}
+td {
+    width: 100px;
+    height: 100px;
+    
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+.primeiralinha {
+    height: 180px;
+}
+.segundalinha {
+    height: 240px;
+}
+.linhamenor {
+    height: 1px;
+    width: 1px;
+}
+td.menor {
+    width: 1px;
+    height: 1px;
+}
+.penultimalinha {
+    height: 90px;
+}
+.antepenultima {
+    height: 90px;
+}
+.quartalinha {
+    height: 90px;
+}
+.imgLogo {
+    height: 160%;
+    width: 120px;
+}
+.justificarDireita {
+    text-align: end;
+}
+.justificarTopo {
+    text-align: center;
+    background-color: rgb(255, 142, 35);
+    
+}
+div {
+    height: 100%;
+    width: 100%;
+}
+.imgPadrao {
+    width: 120px;
+    height: 130px;
+}
+.justificarcentro {
+    text-align: center;
+    background-color: rgb(255, 221, 31);
+    
+}
+.justificarcentroJ {
+    text-align: justify;
+    font-size: 15px;
+    width: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.alinhartexto {
+    background-color: aqua;
+    
+}
+.roxo {
+    background-color: blueviolet;
+}
+.laranja {
+    background-color: rgb(255, 142, 35);
+}
+.amarelo {
+    background-color: rgb(255, 116, 23);
+}
