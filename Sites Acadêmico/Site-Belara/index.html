@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | Template</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    
+    <div class="fundoIMG">
+        <nav class="EspacoAoLado">
+  
+           
+            <input type="radio" name="name" id="fecharInp" class="fecharInp" style="display: none;">
+            <label for="fecharInp" class="close-menu">×</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contact</a></li>
+            </ul>
+            <div class="redeSocialmenu">
+                <div class="icones-flutuantes">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" color="currentColor">
+                                <path
+                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
+                            </g>
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+                        </svg></a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <img src="logo.png.webp" alt="" class="logo1">
+            <div class="ladoEsquerdoHeader">
+                <h1>
+                    P: 10(89) 273 3627
+                </h1>
+                <h2 class="mudarAnim">
+                    Get Free Quote
+                </h2>
+                <input type="radio" name="name" class="btnIR" id="btnIR" style="display: none;">
+                <label for="btnIR" class="entrar">≡</label>
+                
+            </div>
+        </header>
+        <section class="PaginaInicial">
+            <div class="Centro">
+                <h1>
+                    SALT LAKE CITY, UNITED STATES
+                </h1>
+                <h2 class="primeiraFont">
+                    Homeownership never looked so affordable
+                </h2>
+            </div>
+            <div class="BtnConteiner">
+                <h1>Play Reel</h1>
+                <a href="https://www.youtube.com/watch?v=up68UAfH0d0&ab_channel=Mr.Mixer%27sWorld" target="_blank" class="svgbtn">
+                    <svg width="26" height="26"  viewBox="0 0 66 66" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.1122 2.80965C11.3771 2.10985 12.802 1.75062 14.2474 1.76715C15.6928 1.78368 17.1091 2.1754 18.3575 2.90394L55.9398 25.9757C57.2201 26.6265 58.2953 27.6188 59.0465 28.8429C59.7977 30.067 60.1956 31.4751 60.1961 32.9113C60.1966 34.3475 59.7997 35.7558 59.0493 36.9804C58.2989 38.205 57.2244 39.1981 55.9445 39.8498L18.367 63.0912L18.2632 63.1525C17.0208 63.8546 15.6191 64.2262 14.1921 64.232C12.765 64.2378 11.3603 63.8775 10.1122 63.1855C8.83709 62.5315 7.76329 61.5436 7.0053 60.3274C6.24732 59.1111 5.83355 57.712 5.80811 56.2791V9.7208C5.8327 8.2871 6.24607 6.88697 7.0041 5.6698C7.76213 4.45263 8.83639 3.46409 10.1122 2.80965ZM14.1571 7.66065C13.6805 7.65067 13.212 7.78546 12.8135 8.04723C12.4872 8.21204 12.2115 8.46205 12.0156 8.77078C11.8197 9.07951 11.711 9.43546 11.701 9.80094V56.1989C11.7098 56.5908 11.8321 56.9717 12.053 57.2955C12.2739 57.6193 12.5839 57.8721 12.9455 58.0234C13.3081 58.2285 13.7169 58.3379 14.1334 58.3412C14.55 58.3445 14.9605 58.2416 15.3262 58.0422L52.9604 34.7631L53.2338 34.6169C53.5535 34.4615 53.823 34.2192 54.0115 33.9178C54.2 33.6165 54.3 33.2682 54.3 32.9127C54.3 32.5573 54.2 32.209 54.0115 31.9076C53.823 31.6063 53.5535 31.364 53.2338 31.2085L52.9698 31.0671L15.3262 7.95765C14.9689 7.75892 14.566 7.65657 14.1571 7.66065Z"
+                            fill="#D6A04C" />
+                    </svg>
+                </a>
+            </div>
+
+        </section>
+        <div class="parteAbaixo">
+            <svg width="47" height="47" viewBox="0 0 77 77" fill="none" class="mousebtn" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6355 28.875C13.6355 22.2805 16.2552 15.9561 20.9182 11.293C25.5812 6.63003 31.9056 4.01038 38.5001 4.01038C45.0946 4.01038 51.419 6.63003 56.082 11.293C60.745 15.9561 63.3647 22.2805 63.3647 28.875V48.125C63.3647 54.7195 60.745 61.0439 56.082 65.7069C51.419 70.3699 45.0946 72.9895 38.5001 72.9895C31.9056 72.9895 25.5812 70.3699 20.9182 65.7069C16.2552 61.0439 13.6355 54.7195 13.6355 48.125V28.875ZM36.0938 8.96725C31.2277 9.55544 26.7456 11.9056 23.4943 15.5736C20.243 19.2416 18.4479 23.9734 18.448 28.875V48.125C18.448 53.4431 20.5606 58.5434 24.3211 62.3039C28.0816 66.0644 33.1819 68.177 38.5001 68.177C43.8182 68.177 48.9186 66.0644 52.679 62.3039C56.4395 58.5434 58.5522 53.4431 58.5522 48.125V28.875C58.5523 23.9734 56.7571 19.2416 53.5059 15.5736C50.2546 11.9056 45.7724 9.55544 40.9063 8.96725V20.4627C42.3141 20.9604 43.5329 21.8825 44.3948 23.1018C45.2567 24.3211 45.7193 25.7776 45.7188 27.2708V33.6875C45.7188 35.602 44.9583 37.4381 43.6045 38.7919C42.2507 40.1457 40.4146 40.9062 38.5001 40.9062C36.5855 40.9062 34.7494 40.1457 33.3957 38.7919C32.0419 37.4381 31.2813 35.602 31.2813 33.6875V27.2708C31.2813 24.1266 33.2897 21.4541 36.0938 20.4627V8.96725ZM38.5001 24.8645C37.8619 24.8645 37.2499 25.1181 36.7986 25.5693C36.3473 26.0206 36.0938 26.6326 36.0938 27.2708V33.6875C36.0938 34.3256 36.3473 34.9377 36.7986 35.3889C37.2499 35.8402 37.8619 36.0937 38.5001 36.0937C39.1383 36.0937 39.7503 35.8402 40.2016 35.3889C40.6528 34.9377 40.9063 34.3256 40.9063 33.6875V27.2708C40.9063 26.6326 40.6528 26.0206 40.2016 25.5693C39.7503 25.1181 39.1383 24.8645 38.5001 24.8645Z" fill="#D6A04C"/>
+                </svg>
+            <div class="maisCuriosidades">
+                <div>
+                    <h1>
+                        Homeownership never looked so affordable
+                    </h1>
+                </div>
+                <div>
+                    <h1>
+                        World-class architecture design studio
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="roxo">
+        <h1>
+            About Us
+        </h1>
+        <div class="CentroN">
+            <div class="ContainerN">
+                <p>"Belara is a multi-awards winning architectural and design studio operating in the field of interior
+                    design and architecture.
+                </p>
+                <img src="about1.jpg.webp" alt="">
+            </div>
+            <div class="ContainerN">
+                <p class="paragrafMenor">The studio offers tailor-made solutions for every project that has a unique
+                    identity according to its context. Understanding the scope and the projects ambitions, and through
+                    listening to clients, users, and contractors help us in creating well-conceived design solutions.
+                </p>
+                <h2 class="botaoLearnMore">Learn More</h2>
+                <img src="about2.jpg.webp" alt="">
+            </div>
+
+        </div>
+        <section class="WtWeD">
+            <h1 class="tituloWt">
+                What we do?
+            </h1>
+            <div class="ContinersWeJuntos">
+                <div class="weDO">
+                    <img src="blog1.jpg.webp" alt="">
+                    <h1>Commercial</h1>
+                    <h2>ARCHITECTURE DESING</h2>
+                </div>
+                <div class="weDO">
+                    <img src="blog2.jpg.webp" alt="">
+                    <h1>Commercial</h1>
+                    <h2>ARCHITECTURE DESING</h2>
+                </div>
+                <div class="weDO">
+                    <img src="blog3.jpg.webp" alt="">
+                    <h1>Commercial</h1>
+                    <h2>ARCHITECTURE DESING</h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="projects">
+            <h1>
+                Projects
+            </h1>
+
+            <div class="Secao">
+                <img src="projects1.jpg.webp" alt="" class="IMG">
+                <div class="ConteinerNotifica">
+                    <h1>Casa la perla nera residential
+                        interior design</h1>
+                    <h2>
+                        Architecture Design
+                    </h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="WHYUS">
+
+
+
+            <img src="about3.jpg.webp" alt="">
+
+            <div class="Posta">
+                <h1>Why Us?
+                </h1>
+                <p>Belara Nakameguro is located in a quiet location, a 6-minute walk from JR Nakameguro Station and
+                    a
+                    side street from Komazawa Dori. It has 5 floors above ground, with office space.</p>
+                <h2 class="botaoLearnMore">Learn More</h2>
+            </div>
+
+
+        </section>
+        <section class="comentariosPainel">
+            <svg width="15" height="67" viewBox="0 0 35 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M30.4872 0.79421L0.812872 31.4797C0.291688 32.0187 0 32.7416 0 33.4942C0 34.2469 0.291688 34.9698 0.812872 35.5088L30.4872 66.2058C30.73 66.4571 31.0203 66.6569 31.3409 66.7933C31.6615 66.9297 32.006 67 32.354 67C32.702 67 33.0465 66.9297 33.3672 66.7933C33.6878 66.6569 33.9781 66.4571 34.2208 66.2058C34.7203 65.6904 35 64.9984 35 64.2778C35 63.5573 34.7203 62.8653 34.2208 62.3499L6.31597 33.4942L34.2208 4.64433C34.7186 4.12916 34.9972 3.43843 34.9972 2.71927C34.9972 2.00011 34.7186 1.30938 34.2208 0.79421C33.9781 0.542865 33.6878 0.343092 33.3672 0.206685C33.0465 0.0702777 32.702 0 32.354 0C32.006 0 31.6615 0.0702777 31.3409 0.206685C31.0203 0.343092 30.73 0.542865 30.4872 0.79421Z"
+                    fill="#828282" />
+            </svg>
+            <div class="comentarios">
+                <img src="testi.svg" alt="">
+                <p>"Belara is an office building brand that contributes to people's rich work file by providing creative
+                    office space under the slogan "A BASE FOR GOOD LIFE"</p>
+                <img src="founder-img.png.webp" alt="">
+                <h1>Buck Kinnear @Creative Designer</h1>
+            </div>
+
+            <svg width="15" height="74" viewBox="0 0 39 74" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.28742 1.58123C0.742235 2.13931 0.437012 2.88854 0.437012 3.66873C0.437012 4.44891 0.742235 5.19814 1.28742 5.75623L31.7437 37L1.28742 68.2375C0.742235 68.7956 0.437012 69.5448 0.437012 70.325C0.437012 71.1052 0.742235 71.8544 1.28742 72.4125C1.5524 72.6846 1.86921 72.9009 2.21915 73.0486C2.5691 73.1963 2.94508 73.2724 3.32492 73.2724C3.70476 73.2724 4.08074 73.1963 4.43069 73.0486C4.78063 72.9009 5.09745 72.6846 5.36242 72.4125L37.7499 39.1812C38.3188 38.5976 38.6371 37.8149 38.6371 37C38.6371 36.185 38.3188 35.4023 37.7499 34.8187L5.36242 1.58748C5.09745 1.31533 4.78063 1.09903 4.43069 0.951329C4.08074 0.803633 3.70476 0.727539 3.32492 0.727539C2.94508 0.727539 2.5691 0.803633 2.21915 0.951329C1.86921 1.09903 1.5524 1.31533 1.28742 1.58748V1.58123Z"
+                    fill="#828282" />
+            </svg>
+        </section>
+
+        <section class="NovosConteudos">
+            <div class="secaoArchitetch">
+                <img src="single-rooms1.jpg.webp" alt="">
+                <div class="conteudoDaSala">
+                    <h1>ARCHITECTURE DESING</h1>
+                    <h2>Curating a workplace that inspires
+                        all of us</h2>
+                    <h3>12 Feb 2021</h3>
+                </div>
+                <div class="svg1">
+                    <svg width="20" height="63" viewBox="0 0 69 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.333252 29H59.5416L34.1666 3.625L37.3566 0L68.7732 31.4167L37.3566 62.8333L34.1666 59.2083L59.5416 33.8333H0.333252V29Z"
+                            fill="#FFFFFF" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="secaoArchitetch">
+                <img src="single-rooms1.jpg.webp" alt="" class="segura">
+                <div class="conteudoDaSala">
+                    <h1>ARCHITECTURE DESING</h1>
+                    <h2>Curating a workplace that inspires
+                        all of us</h2>
+                    <h3>12 Feb 2021</h3>
+                </div>
+                <div class="svg1">
+                    <svg width="20" height="63" viewBox="0 0 69 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.333252 29H59.5416L34.1666 3.625L37.3566 0L68.7732 31.4167L37.3566 62.8333L34.1666 59.2083L59.5416 33.8333H0.333252V29Z"
+                            fill="#FFFFFF" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <div class="Flor">
+            <div class="Ceu">
+                <div class="Sol">
+                    <div class="logoBaixo" style="color: #D4A574; font-size: 24px; margin-bottom: 20px;"><img
+                            src="https://preview.colorlib.com/theme/belara/assets/img/logo/logo.png" alt=""></div>
+                </div>
+                <div class="Sol">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                    </ul>
+                </div>
+                <div class="Sol">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Submit Ticket</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="Sol">
+                    <h3>Newsletter</h3>
+                    <p style="color: #ccc; margin-bottom: 15px;">Subscribe newsletter to get updates.</p>
+                    <div class="Lua">
+                        <input type="email" placeholder="Digite seu email">
+                        <button type="submit">➤</button>
+                    </div>
+                    <div class="icones-sociais">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                <path fill="white"
+                                    d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2H8a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3m-4 3a4 4 0 1 1 0 8a4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4m4.5-3.5a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="Estrela">
+                Copyright ©2025 Todos os direitos reservados | Este template foi feito com por Colorlib
+            </div>
+        </div>
+</body>
+
+</html>
