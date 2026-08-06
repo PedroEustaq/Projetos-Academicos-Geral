@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade - 550px a 1110px</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .test-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ff4444;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .test-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .test-section h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .test-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .test-links a {
+            display: block;
+            padding: 12px 15px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        
+        .test-links a:hover {
+            background-color: #0052a3;
+        }
+        
+        .info-box {
+            background-color: #e8f4fd;
+            border: 1px solid #b3d9ff;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box h4 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .breakpoint-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .breakpoint-item {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .breakpoint-size {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 1.1rem;
+        }
+        
+        .breakpoint-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <h1>🧪 Teste de Responsividade</h1>
+            <p>Teste todas as páginas entre 550px e 1110px de largura</p>
+        </div>
+        
+        <div class="info-box">
+            <h4>📱 Como testar:</h4>
+            <p>1. Abra o DevTools (F12)</p>
+            <p>2. Clique no ícone de dispositivo móvel</p>
+            <p>3. Teste diferentes larguras entre 550px e 1110px</p>
+            <p>4. Verifique a transição suave entre os breakpoints</p>
+        </div>
+        
+        <div class="test-section">
+            <h3>🏠 Páginas Principais</h3>
+            <div class="test-links">
+                <a href="index.html">Página Inicial</a>
+                <a href="quemsomos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🍕 Funcionalidades</h3>
+            <div class="test-links">
+                <a href="cadastro.html">Cadastro</a>
+                <a href="pesquisa.html">Pesquisa/Cardápio</a>
+                <a href="VerPizza.html">Ver Pizza</a>
+                <a href="Pedido.html">Pedido</a>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>✅ O que foi implementado:</h3>
+            <ul>
+                <li>Header responsivo com transições suaves entre breakpoints</li>
+                <li>Grid de comidas adaptado para diferentes tamanhos de tela</li>
+                <li>Formulários otimizados para cada breakpoint</li>
+                <li>Cards e imagens redimensionados progressivamente</li>
+                <li>Footer reorganizado com transições suaves</li>
+                <li>Espaçamentos e fontes ajustados gradualmente</li>
+                <li>Layout adaptativo para tablets e dispositivos médios</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>🎯 Breakpoints implementados:</h3>
+            <div class="breakpoint-grid">
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">1110px</div>
+                    <div class="breakpoint-desc">Tablets grandes e laptops pequenos</div>
+                </div>
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">900px</div>
+                    <div class="breakpoint-desc">Tablets médios</div>
+                </div>
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">768px</div>
+                    <div class="breakpoint-desc">Tablets pequenos</div>
+                </div>
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">650px</div>
+                    <div class="breakpoint-desc">Dispositivos médios</div>
+                </div>
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">550px</div>
+                    <div class="breakpoint-desc">Mobile otimizado</div>
+                </div>
+                <div class="breakpoint-item">
+                    <div class="breakpoint-size">480px</div>
+                    <div class="breakpoint-desc">Mobile pequeno</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🔄 Transições suaves implementadas:</h3>
+            <ul>
+                <li><strong>1110px → 900px:</strong> Redução gradual de tamanhos e espaçamentos</li>
+                <li><strong>900px → 768px:</strong> Adaptação para tablets pequenos</li>
+                <li><strong>768px → 650px:</strong> Layout intermediário para dispositivos médios</li>
+                <li><strong>650px → 550px:</strong> Transição para mobile com layout em coluna</li>
+                <li><strong>550px → 480px:</strong> Otimizações finais para telas muito pequenas</li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h3>💡 Dicas de teste:</h3>
+            <ul>
+                <li>Teste cada breakpoint para ver as mudanças graduais</li>
+                <li>Observe como os elementos se adaptam suavemente</li>
+                <li>Verifique a legibilidade em cada tamanho de tela</li>
+                <li>Teste a navegação e usabilidade em diferentes resoluções</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

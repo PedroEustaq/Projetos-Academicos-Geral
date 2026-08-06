@@ -1,0 +1,453 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100dvh;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    background-color: red;
+    height: 10%;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header > img {
+    height:40px;
+}
+
+header>a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#placeholder {
+    color: black;
+    padding: 5px 10px;
+    border: 0px solid black;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+.ConteinerComidas {
+    background-color: rgb(203, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.Pizzas {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.ConteinerComidas>img {
+    width: 15%;
+}
+
+.imagemDaComida {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.promocao {
+    background-color: rgba(0, 255, 255, 0);
+    width: 90%;
+    margin-top: 20px;
+}
+.promocao > img {
+    width: 100%;
+    height: 100%;
+}
+.imagemDaComida>img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    scale: 1.05;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.EstaPizza>h3 {
+    color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.EstaPizza {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+footer {
+    height: 800px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(199, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+.imglogo {
+    height: 50px;
+}
+.ParteInfos {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.maisAbaixo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.parteAcima > h1  {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.3rem;
+}
+.parteAcimaLado > h2 {
+    color: white;
+    font-size: 2rem;
+}
+.parteAcimaLado > h1 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.maisAbaixo > h1 {
+    color: white;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1110px) {
+    header {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    
+    header > a {
+        font-size: 0.95rem;
+    }
+    
+    #placeholder {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+    
+    .ConteinerComidas {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .imagemDaComida {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .Pizzas {
+        width: 92%;
+    }
+    
+    .promocao {
+        width: 92%;
+    }
+    
+    .EstaPizza {
+        padding: 12px;
+    }
+    
+    .EstaPizza > h3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    header > img {
+        height: 35px;
+    }
+    
+    header > a {
+        font-size: 0.9rem;
+    }
+    
+    #placeholder {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    
+    .ConteinerComidas {
+        gap: 18px;
+        padding: 12px;
+    }
+    
+    .imagemDaComida {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .Pizzas {
+        width: 94%;
+    }
+    
+    .promocao {
+        width: 94%;
+    }
+    
+    .EstaPizza {
+        padding: 10px;
+    }
+    
+    .EstaPizza > h3 {
+        font-size: 0.9rem;
+    }
+    
+    .ParteInfos {
+        padding: 0 20px;
+        gap: 15px;
+    }
+    
+    .parteAcima > h1,
+    .parteAcimaLado > h1 {
+        font-size: 1.2rem;
+    }
+    
+    .parteAcimaLado > h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    header > img {
+        height: 30px;
+    }
+    
+    header > a {
+        font-size: 0.9rem;
+    }
+    
+    #placeholder {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+    
+    .ConteinerComidas {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .imagemDaComida {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .Pizzas {
+        width: 95%;
+    }
+    
+    .promocao {
+        width: 95%;
+    }
+    
+    .ParteInfos {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .maisAbaixo {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        min-height: 130px;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    header > img {
+        height: 35px;
+    }
+    
+    header > a {
+        font-size: 0.85rem;
+    }
+    
+    #placeholder {
+        width: 85%;
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+    
+    .ConteinerComidas {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .imagemDaComida {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .EstaPizza {
+        padding: 10px;
+    }
+    
+    .EstaPizza > h3 {
+        font-size: 0.85rem;
+    }
+    
+    .Pizzas {
+        width: 97%;
+    }
+    
+    .promocao {
+        width: 97%;
+    }
+    
+    footer {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .ParteInfos {
+        padding: 20px;
+        gap: 25px;
+    }
+    
+    .parteAcima > h1,
+    .parteAcimaLado > h1 {
+        font-size: 1.1rem;
+    }
+    
+    .parteAcimaLado > h2 {
+        font-size: 1.6rem;
+    }
+    
+    .maisAbaixo {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .imglogo {
+        height: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        min-height: 120px;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    header > img {
+        height: 35px;
+    }
+    
+    header > a {
+        font-size: 0.85rem;
+    }
+    
+    #placeholder {
+        width: 80%;
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+    
+    .ConteinerComidas {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .imagemDaComida {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .EstaPizza {
+        padding: 10px;
+    }
+    
+    .EstaPizza > h3 {
+        font-size: 0.9rem;
+    }
+    
+    .Pizzas {
+        width: 98%;
+    }
+    
+    .promocao {
+        width: 98%;
+    }
+    
+    footer {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .ParteInfos {
+        padding: 20px;
+        gap: 25px;
+    }
+    
+    .parteAcima > h1,
+    .parteAcimaLado > h1 {
+        font-size: 1.1rem;
+    }
+    
+    .parteAcimaLado > h2 {
+        font-size: 1.6rem;
+    }
+    
+    .maisAbaixo {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .imglogo {
+        height: 40px;
+    }
+}

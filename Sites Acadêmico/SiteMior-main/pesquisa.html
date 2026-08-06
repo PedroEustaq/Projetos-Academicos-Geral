@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Comidas</title>
+    
+    <link rel="stylesheet" href="pesquisa.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/LogoDoSite.png" alt="">
+        <a href="quemsomos.html">Quem Somos</a>
+        <a href="contato.html">Contato</a>
+        <input type="text" name="" id="placeholder" placeholder="Procurar Delícias">
+        <a href="cadastro.html">Criar Conta</a>
+        <a href="pesquisa.html">Cardápio</a>
+    </header>
+    <div class="container">
+        <!-- Painel de Filtros (Esquerda) -->
+        <div class="filter-panel">
+            <h2 class="filter-title">Filtro de comidas</h2>
+            
+            <div class="filter-section">
+                <h3 class="section-title">Recheios</h3>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="mussarela" name="recheio">
+                        <label for="mussarela">Mussarela</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="calabresa" name="recheio">
+                        <label for="calabresa">Calabresa</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="frango" name="recheio">
+                        <label for="frango">Frango</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="presunto" name="recheio">
+                        <label for="presunto">Presunto</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="catupiry" name="recheio">
+                        <label for="catupiry">Catupiry</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="section-title">Recheio na borda</h3>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="catupiry-borda" name="borda">
+                        <label for="catupiry-borda">Catupiry</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="cheddar-borda" name="borda">
+                        <label for="cheddar-borda">Cheddar</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="chocolate-borda" name="borda">
+                        <label for="chocolate-borda">Chocolate</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="section-title">Sabores</h3>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="portuguesa" name="sabor">
+                        <label for="portuguesa">Portuguesa</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="margherita" name="sabor">
+                        <label for="margherita">Margherita</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="pepperoni" name="sabor">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="quatro-queijos" name="sabor">
+                        <label for="quatro-queijos">Quatro Queijos</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="churrasco" name="sabor">
+                        <label for="churrasco">Churrasco</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de Conteúdo (Direita) -->
+        <div class="content-area">
+            <!-- Barra de Pesquisa -->
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Procurar Delicias">
+            </div>
+
+            <!-- Grade de Cards -->
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="img/image1.png" alt="">
+                    <a href="VerPizza.html">Pizza Portuguesa</a>
+                </div>
+                <div class="card">
+                    <img src="img/image6.png" alt="">
+                    <h2>Pizza de Frango com Catupiry</h2>
+                </div>
+                <div class="card">
+                    <img src="img/image9.png" alt="">
+                    <h2>Pizza de Chocolate com Morango</h2>
+                </div>
+                <div class="card">
+                    <img src="img/image 4.png" alt="">
+                    <h2>Pizza de Churrasco</h2>
+                </div>
+                <div class="card">
+                    <img src="img/image 5.png" alt="">
+                    <h2>Pizza de Mussarela</h2>
+                </div>
+                <div class="card">
+                    <img src="img/pizzadecalabresa.jpg" alt="">
+                    <h2>Pizza de Calabresa</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: red;
+    height: 10%;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+#placeholder {
+    color: black;
+    padding: 5px 10px;
+    border: 0px solid black;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+/* Barra lateral escura */
+.sidebar {
+    width: 60px;
+    background-color: #333333;
+    height: 100%;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    display: flex;
+    padding: 40px;
+    gap: 60px;
+    align-items: center;
+    max-width: 1300px;
+}
+
+/* Seção do Formulário (Esquerda) */
+.form-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.page-title {
+    font-size: 3rem;
+    line-height: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.form-input {
+    padding: 12px 16px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: #cc0000;
+}
+
+.form-textarea {
+    padding: 12px 16px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    outline: none;
+    resize: vertical;
+    min-height: 120px;
+    transition: border-color 0.2s ease;
+}
+
+.form-textarea:focus {
+    border-color: #cc0000;
+}
+
+/* Seção da Ilustração (Direita) */
+.illustration-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+}
+.page-title > span {
+color: #df2818;
+}
+/* Sofá */
+.sofa {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 120px;
+    background-color: #555555;
+    border-radius: 60px 60px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pizza-charing {
+ height: 350px;
+}
+/* Mulheres */
+.woman {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    background-color: #f4a460;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.body {
+    width: 60px;
+    height: 80px;
+    border-radius: 30px 30px 20px 20px;
+    position: relative;
+}
+
+.orange-top {
+    background-color: #ff8c00;
+}
+
+.red-top {
+    background-color: #dc143c;
+}
+
+.black-top {
+    background-color: #2f2f2f;
+}
+
+/* Pizza */
+.pizza-box {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 80px;
+    height: 60px;
+    background-color: #8b4513;
+    border-radius: 8px;
+    border: 2px solid #654321;
+}
+
+.pizza-box::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.pizza-slice {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    border-radius: 50% 0 50% 0;
+    transform: rotate(-45deg);
+}
+
+/* Padrão de fundo */
+.background-pattern {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+}
+
+/* Responsividade */
+@media (max-width: 1110px) {
+    .main-content {
+        padding: 35px;
+        gap: 50px;
+        max-width: 1200px;
+    }
+    
+    .page-title {
+        font-size: 2.8rem;
+        line-height: 1.3;
+        margin-bottom: 35px;
+    }
+    
+    .pizza-charing {
+        height: 320px;
+    }
+    
+    .illustration-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        padding: 30px;
+        gap: 40px;
+        max-width: 1000px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form {
+        gap: 22px;
+    }
+    
+    .pizza-charing {
+        height: 300px;
+    }
+    
+    .illustration-container {
+        height: 320px;
+    }
+    
+    .sofa {
+        width: 280px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+    }
+    
+    .form-section {
+        max-width: 100%;
+    }
+    
+    .illustration-section {
+        order: -1;
+    }
+    
+    .illustration-container {
+        height: 300px;
+    }
+    
+    .sofa {
+        width: 250px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 40px;
+    }
+    
+    .main-content {
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form {
+        gap: 20px;
+    }
+    
+    .illustration-container {
+        height: 250px;
+    }
+    
+    .sofa {
+        width: 200px;
+        height: 80px;
+    }
+    
+    .head {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .body {
+        width: 50px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        height: auto;
+        min-height: calc(100vh - 200px);
+    }
+    
+    .main-content {
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form {
+        gap: 18px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 11px 14px;
+        font-size: 0.95rem;
+    }
+    
+    .form-textarea {
+        min-height: 110px;
+    }
+    
+    .pizza-charing {
+        height: 280px;
+    }
+    
+    .illustration-container {
+        height: 220px;
+    }
+    
+    .sofa {
+        width: 190px;
+        height: 75px;
+    }
+    
+    .head {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .body {
+        width: 45px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        height: auto;
+        min-height: calc(100vh - 200px);
+    }
+    
+    .main-content {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form {
+        gap: 18px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .form-textarea {
+        min-height: 100px;
+    }
+    
+    .pizza-charing {
+        height: 250px;
+    }
+    
+    .illustration-container {
+        height: 200px;
+    }
+    
+    .sofa {
+        width: 180px;
+        height: 70px;
+    }
+    
+    .head {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .body {
+        width: 40px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 30px;
+    }
+    
+    .main-content {
+        padding: 15px;
+        gap: 20px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .illustration-container {
+        height: 200px;
+    }
+    
+    .sofa {
+        width: 180px;
+        height: 70px;
+    }
+    
+    .head {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .body {
+        width: 40px;
+        height: 50px;
+    }
+}
