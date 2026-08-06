@@ -1,0 +1,11 @@
+.cardServico > h3 {
+    font-size: 20px;
+}
+.cardServico > p {
+    font-size: 15px;
+}
+.cardServico > svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}

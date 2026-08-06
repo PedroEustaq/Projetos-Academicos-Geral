@@ -1,0 +1,36 @@
+.BrancoPainel {
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagemDentro {
+    background-image: url(./find-1.jpg.webp);
+    width: 750px;
+    height: 360px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.maisDentroAinda {
+    background-color: white;
+    width: 70%;
+    height: 150px;
+    text-align: center;
+    padding: 50px 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(100px);
+    box-shadow: 0px 0px 10px 1px #22222263;
+}
+
+.maisDentroAinda > p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 25.5px;
+    width: 450px;
+    color: #777777
+}

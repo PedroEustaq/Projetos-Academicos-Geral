@@ -1,0 +1,14 @@
+.PainelPrimeiro {
+    height: 400px;
+    flex-flow: column;
+    color: white;
+}
+.PainelPrimeiro > h1 {
+    font-size: 53px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.PainelPrimeiro > h2 {
+    font-size: 18px;
+
+}
