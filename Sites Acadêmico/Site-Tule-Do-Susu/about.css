@@ -1,0 +1,110 @@
+*{margin: 0;
+ box-sizing: border-box;}
+
+
+body{display:flex;
+    height: 100vh;
+}
+
+#menu{display: grid;
+grid-template-rows: 90px 1fr}
+
+#box-menu {background-color: black;}
+
+.section{display:grid;
+    grid-template-columns: 100px 1fr;
+    display: flex;}
+
+.glen {background-color: rgb(2, 2, 224);}
+
+#about-ritgh{padding: 0 15px;}
+
+.about-text{padding-top:75px;padding-bottom:50px;}
+
+.me{
+ display: inline-block;
+ padding-bottom:8px;
+ margin-bottom:20px;
+ border-bottom: 3px solid blue;
+ border-right: 1vh;
+ font-size: 36px ;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+ color:black;}
+
+ h2{
+ font-size: 24px;
+ color:white;
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+.about-text p{margin-bottom: 9px;
+ font-size: 18px;
+ line-height: 1.6;
+ color: #636363;
+ font-family: sans-serif;
+ line-height: 1.6;}
+
+.skill{
+ display: inline-block;
+ padding-top:45px;
+ padding-bottom:8px;
+ margin-bottom:20px;
+ border-bottom: 3px solid blue;
+ border-right: 1vh;
+ font-size: 36px ;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+ color:black}
+
+.about-img{background-image: url("img-about/about-bg.png");
+ text-align: center;
+ background-repeat: no-repeat;
+ background-size: 10vh;
+ background-position: center center;}
+
+img{width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    margin: 82px auto 50px;
+    max-width: 100%;}
+
+.glen-text{color:white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 15px;
+    padding-top:20px ;
+    margin-bottom: 30px;
+    line-height: 1.8;}
+
+.texto-perfil{margin-right: 90px ;
+ margin-left: 90px;
+ font-weight: 1;}
+
+.perfil-btn{display: inline-block;
+ color: white;
+ min-width: 160px;
+ padding: 9px 10px;
+ margin-bottom: 10px;
+ margin-right: 28px;
+ text-align: center;
+ border-radius: 50px;
+ border: 2px solid rgba(255, 255, 255, 0.3);
+ font-family: sans-serif;}
+
+.perfil-email{display: inline-block;
+ color: white;
+ min-width: 160px;
+ padding: 9px 10px;
+ margin-bottom: 10px;
+ margin-right: 28px;
+ text-align: center;
+ font-family: sans-serif;}
+
+h4{font-size: 20px;
+ font-weight: 600;
+ font-family: sans-serif;}
+
+ .skill-por{display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+ 

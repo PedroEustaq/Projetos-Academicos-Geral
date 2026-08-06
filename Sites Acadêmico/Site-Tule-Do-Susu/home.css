@@ -1,0 +1,251 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    height: 100vh;
+}
+
+/*menu*/
+
+#menu1
+{
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    position: relative;
+    transition: 4s;
+}
+
+#menu2
+{
+    position: absolute;
+    left: -18%;
+    background-color: white;
+    width: 270px;
+    height: 100vh;
+    z-index: 999;
+    transition: 1s;
+}
+
+.btn1
+{
+    display: grid;
+    grid-template-columns: 90px auto;
+}
+
+.barra3
+{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.seta
+{
+    width: 90px;
+    height: 90px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tulen
+{
+    background-color: blue;
+    height: 90px;
+    width: auto;
+    position: relative;
+}
+
+.tulen1
+{
+    width: 100%;
+    height: 100%;
+}
+
+.imglogo
+{
+    position: relative;
+    left: 20%;
+    top: 40%;
+}
+
+.svgseta
+{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+#prod
+{
+    z-index: 9999;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+#prod:checked~#menu1
+{
+    left: -100%;
+    transition: 4s;
+}
+
+#prod:checked~#menu2
+{
+    left: 0%;
+    transition: 1s;
+}
+
+.menulista
+{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 28%;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+.listabtn
+{
+    color: blue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.aicon
+{
+    text-align: center;
+    text-decoration: none;
+}
+
+.copy
+{
+    position: relative;
+    top: 50%;
+}
+
+.barra3:checked
+{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgbarra
+{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.menusocial
+{
+    width: 90px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/*imagens do menu*/
+
+#imagem
+{
+    display: flex;
+    width: 100%;
+}
+
+.item-imagens
+{
+    flex-grow: 1;
+    position: relative;
+    transition: 0.4s;
+    background-size: cover;
+    background-position: 20% 0;
+    filter: brightness(50%);
+}
+
+.item-imagens:hover
+{
+    flex-grow: 7;
+    filter: brightness(100%);
+}
+
+.item-imagens:hover~#img5
+{
+    flex-grow: 1;
+    filter: brightness(50%);
+}
+
+#img1
+{
+    background-image:url(https://preview.colorlib.com/theme/tulen/img/hero/1.jpg.webp);
+}
+
+#img2
+{
+    background-image:url(https://preview.colorlib.com/theme/tulen/img/hero/2.jpg.webp);
+}
+
+#img3
+{
+    background-image:url(https://preview.colorlib.com/theme/tulen/img/hero/3.jpg.webp);
+}
+
+#img4
+{
+    background-image:url(https://preview.colorlib.com/theme/tulen/img/hero/4.jpg.webp);
+}
+
+#img5
+{
+    background-image:url(https://preview.colorlib.com/theme/tulen/img/hero/5.jpg.webp);
+    flex-grow: 7;
+    filter: brightness(100%);
+    order: -1;
+}
+
+.texto
+{
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.item-imagens:hover .texto
+{
+    opacity: 1;
+    bottom: 15%;
+}
+
+#img5 .texto
+{
+    opacity: 1;
+    bottom: 15%;
+}
+
+.item-imagens:hover~#img5 .texto
+{
+    opacity: 0;
+}
+
